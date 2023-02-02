@@ -84,7 +84,6 @@
 		EDF3FA96298BA77A0090DB69 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ED11535B298B88A200AD49B8 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				ED115359298B88A200AD49B8 /* ViewController.swift */,
+				ED11535B298B88A200AD49B8 /* Main.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

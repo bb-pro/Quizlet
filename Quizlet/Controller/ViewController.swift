@@ -8,6 +8,7 @@
 import UIKit
 class ViewController: UIViewController {
     
+    @IBOutlet var scoreLabeL: UILabel!
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var progressBar: UIProgressView!
     @IBOutlet var falseButton: UIButton!
@@ -39,6 +40,9 @@ class ViewController: UIViewController {
         
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+        
+        scoreLabeL.text = "Score: \(quizBrain.getScore())"
+        
     }
 }
 

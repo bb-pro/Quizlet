@@ -58,6 +58,12 @@
                                 <rect key="frame" x="16" y="874" width="398" height="4"/>
                                 <color key="progressTintColor" systemColor="systemPinkColor"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1T-a0-h5Y">
+                                <rect key="frame" x="20" y="79" width="51" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1931517422" green="0.23275524380000001" blue="0.36144953969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,11 +71,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V30-04-sNe" secondAttribute="trailing" constant="16" id="KlE-Re-aLp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Xn-bG-kWd" secondAttribute="trailing" constant="16" id="NQ7-D0-EWg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NeY-PI-wXC" secondAttribute="bottom" constant="68" id="NbO-TX-vyi"/>
+                            <constraint firstItem="R1T-a0-h5Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PZ8-nr-jP1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R1T-a0-h5Y" secondAttribute="trailing" symbolic="YES" id="Sbq-4o-qoU"/>
                             <constraint firstAttribute="bottom" secondItem="Ske-pd-sRB" secondAttribute="bottom" id="TgR-p5-sWh"/>
                             <constraint firstItem="NeY-PI-wXC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.170601" id="WJN-r7-O2l"/>
                             <constraint firstItem="3Xn-bG-kWd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cvF-93-9hm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Xn-bG-kWd" secondAttribute="bottom" constant="20" id="d1L-4X-w08"/>
                             <constraint firstItem="V30-04-sNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dGc-25-TF2"/>
+                            <constraint firstItem="R1T-a0-h5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fBY-y4-jAN"/>
                             <constraint firstAttribute="trailing" secondItem="Ske-pd-sRB" secondAttribute="trailing" constant="-10" id="gGD-uC-1cr"/>
                             <constraint firstItem="V30-04-sNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jCw-WU-7eC"/>
                             <constraint firstItem="NeY-PI-wXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jeH-VX-ceK"/>
@@ -81,6 +90,7 @@
                         <outlet property="falseButton" destination="U6s-st-jML" id="xD8-sD-n04"/>
                         <outlet property="progressBar" destination="3Xn-bG-kWd" id="W1Y-8r-TBT"/>
                         <outlet property="questionLabel" destination="V30-04-sNe" id="cAZ-tV-INm"/>
+                        <outlet property="scoreLabeL" destination="R1T-a0-h5Y" id="7uR-GW-rcI"/>
                         <outlet property="trueButton" destination="u1a-n7-pGQ" id="FOa-a0-XIy"/>
                     </connections>
                 </viewController>
