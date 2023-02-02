@@ -31,17 +31,23 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="u1a-n7-pGQ" secondAttribute="height" multiplier="173:34" id="od0-gc-cZE"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Rectangle" imagePlacement="top" title="True" imagePadding="-45">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-45" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3cD-ob-6Bu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6s-st-jML">
                                         <rect key="frame" x="0.0" y="91" width="346" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Rectangle" imagePlacement="top" title="False" imagePadding="-45">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-45" maxY="0.0"/>
+                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqj-w8-hsU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -71,6 +77,12 @@
                             <constraint firstItem="Ske-pd-sRB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-10" id="mtX-UR-0Zd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="U6s-st-jML" id="xD8-sD-n04"/>
+                        <outlet property="progressBar" destination="3Xn-bG-kWd" id="W1Y-8r-TBT"/>
+                        <outlet property="questionLabel" destination="V30-04-sNe" id="cAZ-tV-INm"/>
+                        <outlet property="trueButton" destination="u1a-n7-pGQ" id="FOa-a0-XIy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
